@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <script src='https://unpkg.com/vue@next'></script>
+</head>
+
+<body>
+    <section id="app">
+        <h2>{{name}}</h2>
+        <img class="img-fluid" :src="imgSrc" v-bind :alt="name">
+        <p>{{description}}</p>
+        <div class="h3">${{price}}</div>
+    </section>
+    <script>
+        const App = {
+            data() {
+                return {
+                    "name": "Bamboo Thermal Ski Coat",
+                    "description": "You'll be the most environmental",
+                    "imgSrc": "https://www.collinsdictionary.com/images/thumb/shirt_378037390_250.jpg?version=5.0.16",
+                    "price": 99
+                }
+            }
+        }
+        Vue.createApp(App).mount("#app")
+    </script>
+</body>
+
+</html>

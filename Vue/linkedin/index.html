@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Vue Template</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <script src='https://unpkg.com/vue@next'></script>
+    <!-- <script  src="./script.js"></script> -->
+</head>
+
+<body class="container mt-5">
+    <div id="app">
+        <h1>Basic Vue Template</h1>
+        <p>Vue is working!</p>
+    </div>
+    <hr/>
+    <div id="anotherApp">
+        <h1>{{name}}</h1>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!'
+                }
+            }
+        })
+        app.mount('#app')
+        
+        Vue.createApp({
+            data() {
+                return {
+                    name: 'Polo shirt'
+                }
+            }
+        }).mount("#anotherApp") 
+    </script>
+</body>
+
+</html>
