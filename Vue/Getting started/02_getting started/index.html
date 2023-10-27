@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ol>
+            <li v-for="(character,index) in listOfCharacters">
+                {{character.name}} -
+                {{character.gender}}
+            </li>
+        </ol>
+    </div>
+</body>
+<script>
+    const { createApp } = Vue
+    const app = createApp({
+        data() {
+            return {
+                listOfCharacters: [
+                    { name: "Monica", gender: "Female" },
+                    { name: "Phoebe", gender: "Female" },
+                    { name: "Rachael", gender: "Female" },
+                    { name: "Ross", gender: "Male" },
+                    { name: "Chandler", gender: "Male" },
+                    { name: "Joey", gender: "Male" },
+                ]
+            }
+        }
+    })
+    app.mount("#app")
+</script>
+
+</html>
