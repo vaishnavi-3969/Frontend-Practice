@@ -16,6 +16,35 @@
                 {{character.gender}}
             </li>
         </ol>
+        <span v-for="character in listOfCharacters">
+            <li>
+                Name:{{character.name}}, Gender:{{character.gender}}
+            </li>
+        </span>
+        <hr />
+        <span v-for="character in listOfCharacters">
+            {{character}}
+        </span>
+        <hr />
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+            </tr>
+            <tr v-for="character in listOfCharacters">
+                <td>{{ character.name }}</td>
+                <td>{{ character.gender }}</td>
+            </tr>
+        </table>
+        <h1>Counter</h1>
+        <p>{{count}}</p>
+        <button v-on:click="incrementCount">Increment Count</button>
+        <div>
+            <label for="incrementAmount">
+                Increment by:
+            </label>
+            <input type="number" v-bind:value="incrementAmount" v-on:input="changeIncrementAmount" />
+        </div>
     </div>
 </body>
 <script>
@@ -23,6 +52,8 @@
     const app = createApp({
         data() {
             return {
+                count: 10,
+                incrementAmount: 8,
                 listOfCharacters: [
                     { name: "Monica", gender: "Female" },
                     { name: "Phoebe", gender: "Female" },
@@ -30,11 +61,21 @@
                     { name: "Ross", gender: "Male" },
                     { name: "Chandler", gender: "Male" },
                     { name: "Joey", gender: "Male" },
+                    { name: "Janice", gender: "Female" },
                 ]
+            }
+        },
+        methods: {
+            incrementCount() {
+                this.count += this.incrementAmount;
+            },
+            changeIncrementAmount(event) {
+                this.incrementAmount = event.target.value;
             }
         }
     })
     app.mount("#app")
 </script>
+
 
 </html>
