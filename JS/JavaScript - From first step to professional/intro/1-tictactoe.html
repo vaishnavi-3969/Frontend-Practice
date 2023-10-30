@@ -2,24 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #board {
+            max-width: 50%;
+            margin: 1em auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+            background-color: teal;
+        }
+
+        .square {
+            min-height: 1.3em;
+            text-align: center;
+            background-color: white;
+            font-size: 5rem;
+            font-family: monospace;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Tic Tac Toe</h1>
-        <h2>A game you know</h2>
-        <p>Player X: Vaishnavi</p>
-        <p>Player O: Random</p>
+        <h1 id="topic">Tic Tac Toe</h1>
+        <h2 id="subtitle">A game you know</h2>
+        <span id="player1" class="players">Player X: <span id="p1">Vaishnavi</span></p>
+            <span id="player2" class="players">Player O:<span id="p2">Tanishq</span></p>
     </header>
     <div id="board">
+        <div class="square">
 
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
+        <div class="square">
+
+        </div>
     </div>
 </body>
 <script>
-    document.title = "MY Page"
+    // const squares = document.querySelectorAll(".square");
+    // squares[4].textContent = "X";
+    // squares[0].textContent = "O";
+    // squares[8].textContent = "X";
+    // squares[2].textContent = "O";
+    // squares[6].textContent = "X";
+    // squares[1].textContent = "O";
+    // squares[3].textContent = "X";
+    // squares[5].textContent = "O";
+    // squares[7].textContent = "X";
+
+
+
+    document.title = "My Page";
+    document.getElementById("subtitle").append(" & 've played & loved");
+    document.getElementById("p1").textContent = "Tanishq";
+    document.getElementById("p2").textContent = "Vaishnavi";
+    document.getElementById("player1").style.color = "red";
+    document.getElementById("player2").style.color = "blue";
+    document.getElementById("topic").style.color = "green";
+    document.getElementById("topic").style.fontSize = "50px";
+    document.getElementById("topic").style.fontFamily = "cursive";
+    document.getElementById("topic").style.fontWeight = "bold";
+    document.getElementById("topic").style.textDecoration = "underline";
+    document.getElementById("topic").style.textDecorationColor = "red";
+    document.getElementById("topic").style.textDecorationStyle = "dotted";
+    document.getElementById("topic").style.textDecorationThickness = "5px";
+    document.getElementById("topic").style.textShadow = "2px 2px 5px red";
+    document.getElementById("topic").style.textTransform = "uppercase";
+    document.getElementById("topic").style.letterSpacing = "5px";
+    document.getElementById("topic").style.wordSpacing = "10px";
+    document.getElementById("topic").style.lineHeight = "2";
+    document.getElementById("topic").style.textAlign = "center";
+    document.getElementById("topic").style.textIndent = "50px";
+    document.getElementById("topic").style.verticalAlign = "middle";
+    document.getElementById("topic").style.whiteSpace = "nowrap";
+    document.getElementById("topic").style.overflow = "hidden";
 </script>
 
 </html>
