@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+       <h1> {{counterTitle}}</h1>
+        <table>
+            <tr v-for="(character,index) in listOfCharacters">
+                <td>{{character.name}}</td>
+                <td> {{character.gender}}</td>
+                <td><button @click="favoriteCharacter(character)">Favorite</button></td>
+            </tr>
+        </table>
+        <h2>Favorite character</h2>
+        <ul>
+            <p v-if="favoriteList.length > 0">
+                <li v-for="character in favoriteList">
+                    {{character.name}}
+                </li>
+            </p>
+            <p v-else>
+                No favorite character
+            </p>
+        </ul>
+        <h2>New character</h2>
+        <p>
+            {{newCharacter}}
+        </p>
+        <label for="character-name">Name</label>
+        <input type="text" v-model="newCharacter.name" placeholder="Enter the new character's name"
+            @keyup.enter="addNewCharacter" />
+
+        <h1>{{incrementAmount}}</h1>
+    </div>
+</body>
+<script>
+    const { createApp } = Vue
+    const app = createApp({
+        data() {
+            return {
+                count: 10,
+                counterTitle:"Counter Standard",
+                favoriteList: [],
+                newCharacter: {
+                    name: ''
+                },
+                incrementAmount: 10,
+                listOfCharacters: [
+                    { name: "Monica", gender: "Female" },
+                    { name: "Phoebe", gender: "Female" },
+                    { name: "Rachael", gender: "Female" },
+                    { name: "Ross", gender: "Male" },
+                    { name: "Chandler", gender: "Male" },
+                    { name: "Joey", gender: "Male" },
+                    { name: "Janice", gender: "Female" },
+                ]
+            }
+        },
+        methods: {
+            favoriteCharacter(character) {
+                this.favoriteList.push(character)
+                console.log(this.favoriteList)
+            },
+            incrementCount() {
+                this.count += this.incrementAmount;
+            },
+            changeIncrementAmount(event) {
+                // this.incrementAmount = Number(event.target.value);
+                this.incrementAmount = event.target.value;
+            },
+            addNewCharacter() {
+                this.listOfCharacters.push(this.newCharacter)
+                this.newCharacter = {
+                    name: ''
+                }
+            }
+        },
+        watch:{
+            count(newValue){
+                console.log(newValue)
+            }
+        }
+    })
+    app.mount("#app")
+</script>
+
+</html>

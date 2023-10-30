@@ -9,34 +9,40 @@
 </head>
 
 <body>
+    <h1>Hello frontend masters</h1>
     <div id="app">
-        <ol>
-            <li v-for="(character,index) in listOfCharacters">
-                {{character.name}} -
-                {{character.gender}}
-            </li>
-        </ol>
-        <span v-for="character in listOfCharacters">
-            <li>
-                Name:{{character.name}}, Gender:{{character.gender}}
-            </li>
-        </span>
-        <hr />
-        <span v-for="character in listOfCharacters">
-            {{character}}
-        </span>
-        <hr />
+        <h1> {{counterTitle}}</h1>
         <table>
-            <tr>
+            <td>
                 <th>Name</th>
                 <th>Gender</th>
-            </tr>
-            <tr v-for="character in listOfCharacters">
-                <td>{{ character.name }}</td>
-                <td>{{ character.gender }}</td>
-                <td><button>Click me</button></td>
+                <th>Button</th>
+            </td>
+            <tr v-for="(character,index) in listOfCharacters">
+                <td>{{character.name}}</td>
+                <td> {{character.gender}}</td>
+                <td><button @click="favoriteCharacter(character)">Favorite</button></td>
             </tr>
         </table>
+        <h2>Favorite character</h2>
+        <ul>
+            <p v-if="favoriteList.length > 0">
+                <li v-for="character in favoriteList">
+                    {{character.name}}
+                </li>
+            </p>
+            <p v-else>
+                No favorite character
+            </p>
+        </ul>
+        <h2>New character</h2>
+        <p>
+            {{newCharacter}}
+        </p>
+        <label for="character-name">Name</label>
+        <input type="text" v-model="newCharacter.name" placeholder="Enter the new character's name"
+            @keyup.enter="addNewCharacter" />
+
         <h1>Counter</h1>
         <p>{{count}}</p>
         <button v-on:click="incrementCount">Increment Count</button>
@@ -60,6 +66,11 @@
         data() {
             return {
                 count: 10,
+                counterTitle: "Counter Standard",
+                favoriteList: [],
+                newCharacter: {
+                    name: ''
+                },
                 incrementAmount: 10,
                 listOfCharacters: [
                     { name: "Monica", gender: "Female" },
@@ -72,18 +83,43 @@
                 ]
             }
         },
+        computed: {
+            displayTitle(){
+                if(this.count > 20){
+                    return "counter standard - very long";
+                }else{
+                    return "counter standard";
+                }
+            }
+        },
         methods: {
+            favoriteCharacter(character) {
+                this.favoriteList.push(character)
+                console.log(this.favoriteList)
+            },
             incrementCount() {
                 this.count += this.incrementAmount;
             },
             changeIncrementAmount(event) {
                 // this.incrementAmount = Number(event.target.value);
                 this.incrementAmount = event.target.value;
+            },
+            addNewCharacter() {
+                this.listOfCharacters.push(this.newCharacter)
+                this.newCharacter = {
+                    name: ''
+                }
+            }
+        },
+        watch: {
+            count(newValue) {
+                if (newValue > 20) {
+                    this.counterTitle += "Counter High"
+                }
             }
         }
     })
     app.mount("#app")
 </script>
-
 
 </html>
