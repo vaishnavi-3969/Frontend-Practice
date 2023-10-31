@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Quiz</h1>
+    <div id="options">
+        <button name="true" value="true">true</button>
+        <button name="false" value="false">false</button>
+    </div>
+</body>
+<script>
+    const optionButtons = document.querySelectorAll("button");
+    // explanation should be the "explanation" div
+    const explanation = document.getElementById("explanation")
+
+    let trueButton = optionButtons[0]
+
+    trueButton.addEventListener("click", (event) => {
+        trueButton.textContent = trueButton.textContent.toUpperCase()
+    });
+    let h1 = document.getElementsByTagName("h1")
+    h1 = h1[0];
+    h1.addEventListener("mouseover", () => {
+        h1.textContent = "Hovering";
+    });
+    h1.addEventListener("mouseout", () => {
+        h1.textContent = "Quiz ";
+    });
+</script>
+
+</html>
