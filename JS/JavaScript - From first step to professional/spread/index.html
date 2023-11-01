@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const oldBurns = ["square","wack"];
+    const newBurns = ["basic","dusty","sus"];
+    const allBurns = [...oldBurns,...newBurns];
+    console.log(allBurns);
+    const oldBurnsCopy = [...oldBurns];
+    console.log(oldBurnsCopy);
+    const oldBurnsCopy2 = oldBurns;
+    console.log(oldBurnsCopy2);
+    oldBurnsCopy2.push("new");
+    console.log(oldBurnsCopy2);
+    console.log(oldBurns);
+    console.log(oldBurnsCopy);
+    const skills = ["html" ,"css","js"];
+    const newSkills = ["react","ts","node"];
+    skills.push(...newSkills);
+    console.log(skills);
+</script>
+</html>
