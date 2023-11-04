@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <section id="header">
+        <img src="coffee_masters_logo.png" alt="coffee master" />
+        <h1>Coffee Masters</h1>
+    </section>
+    <section id="main" class="main-class">
+        <div class="main">
+            <div class="item-1">
+                <h1>ITEMS</h1>
+                <table class="table">
+                    <ul class="order">
+                        <li class="col-1">1x</li>
+                        <li class="col-2">
+                            <ul>
+                                <li><strong>Capuccino</strong></li>
+                                <li>Lite foam</li>
+                            </ul>
+                        </li>
+                        <li class="col-3"><strong>$3.85</strong></li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul class="order">
+                        <li class="col-1">1x</p>
+                        <li class="col-2">
+                            <ul>
+                                <li><strong>Capuccino</strong></li>
+                                <li>Lite milk</li>
+                                <li>Double espresso</li>
+                            </ul>
+                        </li>
+                        <li class="col-3"><strong>$3.85</strong></li>
+                    </ul>
+                    <div class="line"></div>
+                    <ul class="order">
+                        <li class="col-1">1x</li>
+                        <li class="col-2">
+                            <ul>
+                                <li><strong>Croissant</strong></li>
+                                <li>Butter</li>
+                            </ul>
+                        </li>
+                        <li class="col-3"><strong>$2.45</strong></li>
+                    </ul>
+                </table>
+            </div>
+            <div class="item-2">
+                <div class="name">
+                    <h1>NAME</h1>
+                    <div class="card-group">
+                        <label for="name" class="card-number">Name for order</label>
+                        <input id="name" class="name-input" placeholder="Ford Perfect" />
+                    </div>
+                </div>
+                <div class="payment">
+                    <h1>PAYMENT</h1>
+                    <div>
+                        <div class="card-group">
+                            <label for="card-number" class="card-number">Card number</label>
+                            <input id="card-number" class="name-input" placeholder="1234 5678 123 2345" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card-group">
+                            <label for="card-ccv" class="card-number">CCV Number</label>
+                            <input id="card-ccv" class="name-input" placeholder="001" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orders" class="orders">
+        <table>
+            <tr>
+                <td class="left">Subtotal:</td>
+                <td class="right">$9.65</td>
+            </tr>
+            <tr>
+                <td class="left">Tax:</td>
+                <td class="right">$9.65</td>
+            </tr>
+            <tr>
+                <td class="left"><strong>Total:</strong></td>
+                <td class="right"><strong>$10.47</strong></td>
+            </tr>
+        </table>
+
+        <div class="order-button">
+            <button>Place Order</button>
+        </div>
+    </section>
+</body>
+
+</html>
