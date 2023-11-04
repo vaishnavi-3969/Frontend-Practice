@@ -38,7 +38,7 @@ const Router = {
                     pageElement = document.createElement("details-page");
                     pageElement.textContent = "Details";
                     const paramId = route.substring(route.lastIndexOf('-') + 1);
-                    pageElement.dataset.id = paramId;
+                    pageElement.dataset.productId = paramId;
                 }
         }
         if (pageElement) {
