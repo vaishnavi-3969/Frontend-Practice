@@ -50,6 +50,8 @@ const Router = {
             //we want to go to the top
             window.scrollX = 0;
             window.scrollY = 0;
+        }else{
+            document.querySelector("main").innerHTML = "oops, 404!";
         }
     },
 };
