@@ -9,3 +9,9 @@
 .home .main__subheading{
     font-size: 40px;
 }
+
+@media (max-width: 1200px) {
+     .home .main__heading{
+        font-size: 64px;
+     }
+}

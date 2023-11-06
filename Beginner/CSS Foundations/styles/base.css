@@ -26,7 +26,7 @@ body {
     color: var(--color-primary)
 }
 
-p {
+h2,p {
     margin: 0;
 }
 

@@ -1,14 +1,60 @@
 @import './base.css';
 
-body{
+body {
     background-color: #fff;
-    color:var(--color-primary);
+    color: var(--color-primary);
 }
 
-.shopping-cart-icon--primary g path{
+.shopping-cart-icon--primary g path {
     fill: var(--color-primary);
 }
 
-.speakers .main__title{
+.speakers .main__title {
     font-size: 98px;
+}
+
+.speaker__photo {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    margin-bottom: 36px;
+}
+
+.speaker__name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.speaker__company {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.speaker__bio {
+    font-size: 20px;
+}
+
+.speaker__company,
+.company__bio {
+    color: #000;
+}
+
+.speaker__wrapper {
+    max-width: 460px;
+}
+
+.speakers__wrapper {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 120px;
+    column-gap: 200px;
+}
+
+@media (max-width:1000px) {
+    .speakers__wrapper {
+        grid-template-columns: 1fr;
+    }
 }
