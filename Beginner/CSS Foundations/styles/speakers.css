@@ -2,5 +2,13 @@
 
 body{
     background-color: #fff;
-    color:#ff7b54;
+    color:var(--color-primary);
+}
+
+.shopping-cart-icon--primary g path{
+    fill: var(--color-primary);
+}
+
+.speakers .main__title{
+    font-size: 98px;
 }
