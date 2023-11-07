@@ -2,23 +2,38 @@ import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Pet from "./Pet";
 import SearchParams from "./SearchParams";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Details from "./Details";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: Infinity,
+      cacheTime: Infinity,
+      // once fetched anything don't refetch it
+    },
+  },
+});
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <h1>Adopt Me!</h1>
+      <QueryClientProvider client={queryClient}>
+        <header>
+          <Link to="/">
+            <h1>Adopt Me!</h1>
+          </Link>
+        </header>
         <Routes>
-          <Route path="/" element={<SearchParams/>}/>
-          <Route path="/details/:id" element={<Details/>}/>
+          <Route path="/" element={<SearchParams />} />
+          <Route path="/details/:id" element={<Details />} />
         </Routes>
-        {/* <SearchParams /> */}
-        {/* <Pet name="luna" animal="dog" breed="havanese" />
+      </QueryClientProvider>
+      {/* <SearchParams /> */}
+      {/* <Pet name="luna" animal="dog" breed="havanese" />
       <Pet name="pepper" animal="bird" breed="cockatiel" />
       <Pet name="doink" animal="cat" breed="mixed" /> */}
-      </div>
     </BrowserRouter>
   );
   // return React.createElement("div", {}, [
