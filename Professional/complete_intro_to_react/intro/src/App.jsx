@@ -1,19 +1,25 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Pet from "./Pet";
 import SearchParams from "./SearchParams";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Details from "./Details";
 
 const App = () => {
   return (
-    <div>
-      <h1>Adopt Me!</h1>
-      <SearchParams/>
-      
-
-      {/* <Pet name="luna" animal="dog" breed="havanese" />
+    <BrowserRouter>
+      <div>
+        <h1>Adopt Me!</h1>
+        <Routes>
+          <Route path="/" element={<SearchParams/>}/>
+          <Route path="/details/:id" element={<Details/>}/>
+        </Routes>
+        {/* <SearchParams /> */}
+        {/* <Pet name="luna" animal="dog" breed="havanese" />
       <Pet name="pepper" animal="bird" breed="cockatiel" />
       <Pet name="doink" animal="cat" breed="mixed" /> */}
-    </div>
+      </div>
+    </BrowserRouter>
   );
   // return React.createElement("div", {}, [
   //   React.createElement("h1", {}, "Adopt Me!"),
