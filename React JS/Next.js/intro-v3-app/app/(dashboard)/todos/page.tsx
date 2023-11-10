@@ -1,5 +1,5 @@
-const SettingsPage = () => {
+const ToDoPage = () => {
   return <div>Todo Page</div>
 }
 
-export default SettingsPage
+export default ToDoPage
