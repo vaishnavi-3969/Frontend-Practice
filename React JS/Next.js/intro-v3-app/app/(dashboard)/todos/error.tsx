@@ -1,5 +1,6 @@
 'use client'
-const TodosPageError = () => {
+const TodosPageError = (error) => {
+  console.error()
   return (
     <div>
       <h1>Oops! Something went wrong.</h1>

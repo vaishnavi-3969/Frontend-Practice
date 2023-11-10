@@ -8,8 +8,7 @@ const getData = async () => {
     orderBy: {
       createdAt: 'desc',
     },
-  })
-
+  });
   return todos
 }
 
