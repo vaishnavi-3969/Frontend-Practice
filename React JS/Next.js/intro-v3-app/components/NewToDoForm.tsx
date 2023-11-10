@@ -1,19 +1,17 @@
-import { newTodo } from "@/utils/actions"
+import { newTodo } from '@/utils/actions'
 
-const NewToDoForm = () => {
+const NewTodoForm = () => {
   return (
     <div>
       <form action={newTodo}>
-        <input name='content' className="border border-black" type="text" />
-        <button className="border border-black" type="submit">
-          Add
-        </button>
+        <input type="text" name="todo" className="border border-black" />
+        <button type="submit">create</button>
       </form>
     </div>
   )
 }
 
-export default NewToDoForm
+export default NewTodoForm
 
 // =============================
 // 'use client'
