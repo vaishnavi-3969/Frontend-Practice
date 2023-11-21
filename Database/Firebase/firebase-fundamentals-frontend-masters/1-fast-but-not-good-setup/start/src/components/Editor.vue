@@ -2,11 +2,23 @@
 import { onMounted, reactive } from 'vue';
 import { useRoute } from 'vue-router'
 import { snarkdownEnhanced as snarkdown } from '../util';
+import { initializeApp } from 'firebase/app';
+import { config } from '../config.js';
+import { getFirestore, collection, onSnapshot } from 'firebase/firestore';
+
+const firebaseApp = initializeApp(config.firebase);
+const firestore = getFirestore(firebaseApp);
+const markdownsCol = collection(firestore, 'markdowns');
 
 const route = useRoute();
-const state = reactive({ });
+const state = reactive({});
 onMounted(() => {
-
+  onSnapshot(markdownsCol, snapshot => {
+    const data = snapshot.data();
+    state.converted = data.converted;
+    state.markdown = data.markdown;
+    
+  });
 })
 
 function convert(event) {
@@ -34,6 +46,7 @@ function convert(event) {
   margin-block-start: 8px;
   height: 100vh;
 }
+
 #editor h1,
 #editor h2,
 #editor h3,
@@ -41,6 +54,7 @@ function convert(event) {
 #editor h5 {
   margin-block-end: 8px;
 }
+
 #editor .output p {
   line-height: 1.5;
   margin-block-end: 12px;
