@@ -11,13 +11,15 @@ const firestore = getFirestore(firebaseApp);
 const markdownsCol = collection(firestore, 'markdowns');
 
 const route = useRoute();
+const markdown = doc(markdownsCol,route.params.id);
+
 const state = reactive({});
 onMounted(() => {
   onSnapshot(markdownsCol, snapshot => {
+    // debugger;
     const data = snapshot.data();
     state.converted = data.converted;
     state.markdown = data.markdown;
-    
   });
 })
 
