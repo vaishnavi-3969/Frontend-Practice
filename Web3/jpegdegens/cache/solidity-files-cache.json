@@ -1,44 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "D:\\github folder\\Frontend Masters\\Web3\\jpegdegens\\contracts\\HelloWorld.sol": {
-      "lastModificationDate": 1700841611500,
-      "contentHash": "acb0b59cd7cdfbc39ffe4e945bbbb303",
-      "sourceName": "contracts/HelloWorld.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "HelloWorld"
-      ]
-    },
     "D:\\github folder\\Frontend Masters\\Web3\\jpegdegens\\contracts\\Counter.sol": {
-      "lastModificationDate": 1700856512392,
-      "contentHash": "68cd800ec3acdcf2c6f32789f21c87c4",
+      "lastModificationDate": 1700899069987,
+      "contentHash": "148b09ab747abcd9891c4fbf9fdccd74",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -106,6 +71,111 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "D:\\github folder\\Frontend Masters\\Web3\\jpegdegens\\contracts\\HelloWorld.sol": {
+      "lastModificationDate": 1700841611500,
+      "contentHash": "acb0b59cd7cdfbc39ffe4e945bbbb303",
+      "sourceName": "contracts/HelloWorld.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "HelloWorld"
+      ]
+    },
+    "D:\\github folder\\Frontend Masters\\Web3\\jpegdegens\\contracts\\TestGas.sol": {
+      "lastModificationDate": 1700918093035,
+      "contentHash": "f88f0637f2eb87e04919bf913f349ed5",
+      "sourceName": "contracts/TestGas.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "TestGas"
+      ]
+    },
+    "D:\\github folder\\Frontend Masters\\Web3\\jpegdegens\\contracts\\Hero.sol": {
+      "lastModificationDate": 1700921815087,
+      "contentHash": "6f459c3777152401a748194bbe1d49ca",
+      "sourceName": "contracts/Hero.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Hero"
       ]
     }
   }
