@@ -30,12 +30,32 @@ contract Hero {
     function generateRandom() public view returns (uint) {
         return
             uint(
-                keccak256(abi.encodePacked(block.difficulty, block.timestamp))
+                keccak256(abi.encodePacked(block.prevrandao, block.timestamp))
             );
     }
 
     function getHeroes() public view returns (uint[] memory) {
         return addressToHeroes[msg.sender];
+    }
+
+    function getStrength(uint hero) public pure returns (uint32) {
+        return uint32((hero >> 2) & 0x1F);
+    }
+
+    function getHealth(uint hero) public pure returns (uint32) {
+        return uint32((hero >> 7) & 0x1F);
+    }
+
+    function getDex(uint hero) public pure returns (uint32) {
+        return uint32((hero >> 12) & 0x1F);
+    }
+
+    function getIntellect(uint hero) public pure returns (uint32) {
+        return uint32((hero >> 17) & 0x1F);
+    }
+
+    function getMagic(uint hero) public pure returns (uint32) {
+        return uint32((hero >> 22) & 0x1F);
     }
 
     function createHero(Class class) public payable {
@@ -47,23 +67,23 @@ contract Hero {
         stats[2] = 12;
         stats[3] = 17;
         stats[4] = 22;
-        
+
         uint len = 5;
         uint hero = uint(class);
 
-        do{
-            uint pos = generateRandom() %len;
-            uint value = generateRandom() %(13 + len) + 1;
+        do {
+            uint pos = generateRandom() % len;
+            uint value = (generateRandom() % (13 + len)) + 1;
 
-            hero |= value << stats[pos];
+            hero |= uint(value) << stats[pos];
             len--;
             stats[pos] = stats[len];
-        }while(len>0);
+        } while (len > 0);
 
         addressToHeroes[msg.sender].push(hero);
-        
     }
 }
+
 
 
 
