@@ -1,0 +1,585 @@
+[debug] [2020-05-16T22:25:56.019Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T22:25:56.021Z] Command:       /usr/local/bin/firebase /Users/shaunw/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start --only functions
+[debug] [2020-05-16T22:25:56.021Z] CLI Version:   8.2.0
+[debug] [2020-05-16T22:25:56.021Z] Platform:      darwin
+[debug] [2020-05-16T22:25:56.022Z] Node Version:  v12.16.1
+[debug] [2020-05-16T22:25:56.023Z] Time:          Sat May 16 2020 18:25:56 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-05-16T22:25:56.023Z] ----------------------------------------------------------------------
+[debug] [2020-05-16T22:25:56.023Z] 
+[debug] [2020-05-16T22:25:56.029Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-16T22:25:56.030Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-05-16T22:25:56.052Z] [hub] writing locator at /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/hub-restaurant-reservations-144e5.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/shaunw/repos/firebase-demo-app/functions" for Cloud Functions...
+[debug] [2020-05-16T22:25:56.339Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:25:56.339Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-16T22:25:56.339Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:25:56.340Z] [worker-~diagnostic~-6c3bfaaa-e4aa-478d-bf05-952a2e3fa54d]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_39821.sock 
+[debug] [2020-05-16T22:25:56.340Z] [worker-~diagnostic~-6c3bfaaa-e4aa-478d-bf05-952a2e3fa54d]: BUSY 
+[debug] [2020-05-16T22:25:56.497Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAuthUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:25:56.497Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:25:56.497Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:25:56.498Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:25:56.498Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createTemporaryUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:25:56.498Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendVerificationEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:25:56.710Z] [runtime-status] [39821] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:25:56.711Z] [runtime-status] [39821] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:25:56.712Z] [runtime-status] [39821] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:25:56.713Z] [runtime-status] [39821] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:25:56.715Z] [runtime-status] [39821] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:25:56.746Z] [runtime-status] [39821] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:25:56.747Z] [runtime-status] [39821] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:25:56.748Z] [runtime-status] [39821] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:25:56.749Z] [runtime-status] [39821] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:25:56.749Z] [runtime-status] [39821] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:25:56.819Z] [runtime-status] [39821] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[info] ✔  functions[makeReservation]: http function initialized (http://localhost:5001/restaurant-reservations-144e5/us-central1/makeReservation).
+[info] ✔  functions[submitReview]: http function initialized (http://localhost:5001/restaurant-reservations-144e5/us-central1/submitReview).
+[info] ✔  functions[createAccount]: http function initialized (http://localhost:5001/restaurant-reservations-144e5/us-central1/createAccount).
+[info] ✔  functions[confirmEmail]: http function initialized (http://localhost:5001/restaurant-reservations-144e5/us-central1/confirmEmail).
+[info] i  functions[sendVerificationEmail]: function ignored because the firestore emulator does not exist or is not running.
+[info] ✔  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-05-16T22:25:56.822Z] [worker-~diagnostic~-6c3bfaaa-e4aa-478d-bf05-952a2e3fa54d]: IDLE 
+[debug] [2020-05-16T22:25:57.502Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:25:57.502Z] [worker-~diagnostic~-6c3bfaaa-e4aa-478d-bf05-952a2e3fa54d]: FINISHING 
+[debug] [2020-05-16T22:25:57.509Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:25:57.510Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:25:57.510Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:25:57.510Z] [worker-~diagnostic~-c4346fc2-1dff-4913-8bf4-6e204eb8c243]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_39822.sock 
+[debug] [2020-05-16T22:25:57.510Z] [worker-~diagnostic~-c4346fc2-1dff-4913-8bf4-6e204eb8c243]: BUSY 
+[debug] [2020-05-16T22:25:57.513Z] [worker-~diagnostic~-6c3bfaaa-e4aa-478d-bf05-952a2e3fa54d]: exited 
+[debug] [2020-05-16T22:25:57.513Z] [worker-~diagnostic~-6c3bfaaa-e4aa-478d-bf05-952a2e3fa54d]: FINISHED 
+[debug] [2020-05-16T22:25:57.858Z] [runtime-status] [39822] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:25:57.860Z] [runtime-status] [39822] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:25:57.862Z] [runtime-status] [39822] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:25:57.863Z] [runtime-status] [39822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:25:57.865Z] [runtime-status] [39822] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:25:57.896Z] [runtime-status] [39822] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:25:57.896Z] [runtime-status] [39822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:25:57.898Z] [runtime-status] [39822] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:25:57.899Z] [runtime-status] [39822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:25:57.899Z] [runtime-status] [39822] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:25:57.973Z] [runtime-status] [39822] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:25:57.974Z] [worker-~diagnostic~-c4346fc2-1dff-4913-8bf4-6e204eb8c243]: IDLE 
+[debug] [2020-05-16T22:27:09.991Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/helloWorld.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.096Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.096Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.096Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.197Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/makeReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.300Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/submitReview.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.404Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.405Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAccount.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.405Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createTemporaryUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.405Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/confirmEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.405Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAuthUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.405Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.506Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendVerificationEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:10.506Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:27:11.511Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:27:11.511Z] [worker-~diagnostic~-c4346fc2-1dff-4913-8bf4-6e204eb8c243]: FINISHING 
+[debug] [2020-05-16T22:27:11.512Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:27:11.518Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:27:11.518Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:27:11.518Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:27:11.519Z] [worker-~diagnostic~-c4daf7c8-ee79-45d9-a909-05c42c844528]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_39866.sock 
+[debug] [2020-05-16T22:27:11.519Z] [worker-~diagnostic~-c4daf7c8-ee79-45d9-a909-05c42c844528]: BUSY 
+[debug] [2020-05-16T22:27:11.520Z] [worker-~diagnostic~-c4346fc2-1dff-4913-8bf4-6e204eb8c243]: exited 
+[debug] [2020-05-16T22:27:11.520Z] [worker-~diagnostic~-c4346fc2-1dff-4913-8bf4-6e204eb8c243]: FINISHED 
+[debug] [2020-05-16T22:27:11.862Z] [runtime-status] [39866] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:27:11.864Z] [runtime-status] [39866] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:27:11.866Z] [runtime-status] [39866] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:27:11.866Z] [runtime-status] [39866] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:27:11.868Z] [runtime-status] [39866] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:27:11.897Z] [runtime-status] [39866] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:27:11.898Z] [runtime-status] [39866] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:27:11.899Z] [runtime-status] [39866] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:27:11.899Z] [runtime-status] [39866] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:27:11.899Z] [runtime-status] [39866] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:27:11.974Z] [runtime-status] [39866] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:27:11.975Z] [worker-~diagnostic~-c4daf7c8-ee79-45d9-a909-05c42c844528]: IDLE 
+[debug] [2020-05-16T22:39:07.622Z] File /Users/shaunw/repos/firebase-demo-app/functions/src/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:08.626Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:39:08.626Z] [worker-~diagnostic~-c4daf7c8-ee79-45d9-a909-05c42c844528]: FINISHING 
+[debug] [2020-05-16T22:39:08.626Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:39:08.631Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:39:08.631Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:39:08.631Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:39:08.632Z] [worker-~diagnostic~-fd07fccc-55d9-4904-82c1-2bf44a3b94aa]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40115.sock 
+[debug] [2020-05-16T22:39:08.632Z] [worker-~diagnostic~-fd07fccc-55d9-4904-82c1-2bf44a3b94aa]: BUSY 
+[debug] [2020-05-16T22:39:08.635Z] [worker-~diagnostic~-c4daf7c8-ee79-45d9-a909-05c42c844528]: exited 
+[debug] [2020-05-16T22:39:08.635Z] [worker-~diagnostic~-c4daf7c8-ee79-45d9-a909-05c42c844528]: FINISHED 
+[debug] [2020-05-16T22:39:09.009Z] [runtime-status] [40115] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:39:09.011Z] [runtime-status] [40115] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:39:09.016Z] [runtime-status] [40115] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:09.017Z] [runtime-status] [40115] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:39:09.019Z] [runtime-status] [40115] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:39:09.049Z] [runtime-status] [40115] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:39:09.050Z] [runtime-status] [40115] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:09.051Z] [runtime-status] [40115] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:09.051Z] [runtime-status] [40115] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:09.052Z] [runtime-status] [40115] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:39:09.136Z] [runtime-status] [40115] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:39:09.137Z] [worker-~diagnostic~-fd07fccc-55d9-4904-82c1-2bf44a3b94aa]: IDLE 
+[debug] [2020-05-16T22:39:09.281Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.281Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/helloWorld.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.488Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/makeReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.489Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.489Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.489Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.593Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/confirmEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.593Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/submitReview.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.694Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.694Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.694Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAccount.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.694Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createTemporaryUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.694Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAuthUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.798Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendVerificationEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:09.798Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:10.801Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:39:10.802Z] [worker-~diagnostic~-fd07fccc-55d9-4904-82c1-2bf44a3b94aa]: FINISHING 
+[debug] [2020-05-16T22:39:10.802Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:39:10.807Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:39:10.807Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:39:10.807Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:39:10.808Z] [worker-~diagnostic~-3c7e0138-a66d-4018-9334-90c375e0c44a]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40124.sock 
+[debug] [2020-05-16T22:39:10.808Z] [worker-~diagnostic~-3c7e0138-a66d-4018-9334-90c375e0c44a]: BUSY 
+[debug] [2020-05-16T22:39:10.811Z] [worker-~diagnostic~-fd07fccc-55d9-4904-82c1-2bf44a3b94aa]: exited 
+[debug] [2020-05-16T22:39:10.811Z] [worker-~diagnostic~-fd07fccc-55d9-4904-82c1-2bf44a3b94aa]: FINISHED 
+[debug] [2020-05-16T22:39:11.187Z] [runtime-status] [40124] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:39:11.189Z] [runtime-status] [40124] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:39:11.190Z] [runtime-status] [40124] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:11.191Z] [runtime-status] [40124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:39:11.194Z] [runtime-status] [40124] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:39:11.225Z] [runtime-status] [40124] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:39:11.225Z] [runtime-status] [40124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:11.226Z] [runtime-status] [40124] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:11.226Z] [runtime-status] [40124] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:11.227Z] [runtime-status] [40124] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:39:11.300Z] [runtime-status] [40124] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:39:11.301Z] [worker-~diagnostic~-3c7e0138-a66d-4018-9334-90c375e0c44a]: IDLE 
+[debug] [2020-05-16T22:39:29.351Z] File /Users/shaunw/repos/firebase-demo-app/functions/src/reservations/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:30.355Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:39:30.356Z] [worker-~diagnostic~-3c7e0138-a66d-4018-9334-90c375e0c44a]: FINISHING 
+[debug] [2020-05-16T22:39:30.357Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:39:30.362Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:39:30.362Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:39:30.362Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:39:30.363Z] [worker-~diagnostic~-ebdf7015-b866-46bb-be6f-101048fc9b1a]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40144.sock 
+[debug] [2020-05-16T22:39:30.363Z] [worker-~diagnostic~-ebdf7015-b866-46bb-be6f-101048fc9b1a]: BUSY 
+[debug] [2020-05-16T22:39:30.366Z] [worker-~diagnostic~-3c7e0138-a66d-4018-9334-90c375e0c44a]: exited 
+[debug] [2020-05-16T22:39:30.366Z] [worker-~diagnostic~-3c7e0138-a66d-4018-9334-90c375e0c44a]: FINISHED 
+[debug] [2020-05-16T22:39:30.761Z] [runtime-status] [40144] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:39:30.763Z] [runtime-status] [40144] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:39:30.767Z] [runtime-status] [40144] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:30.768Z] [runtime-status] [40144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:39:30.771Z] [runtime-status] [40144] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:39:30.809Z] [runtime-status] [40144] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:39:30.810Z] [runtime-status] [40144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:30.812Z] [runtime-status] [40144] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:30.813Z] [runtime-status] [40144] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:30.814Z] [runtime-status] [40144] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:39:30.905Z] [runtime-status] [40144] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:39:30.908Z] [worker-~diagnostic~-ebdf7015-b866-46bb-be6f-101048fc9b1a]: IDLE 
+[debug] [2020-05-16T22:39:31.010Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.010Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/helloWorld.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.216Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.216Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/makeReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.216Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.216Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.318Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/confirmEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.318Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/submitReview.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.422Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendVerificationEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.422Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAuthUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.422Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.422Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.423Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createTemporaryUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.423Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAccount.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:31.423Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:39:32.425Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:39:32.425Z] [worker-~diagnostic~-ebdf7015-b866-46bb-be6f-101048fc9b1a]: FINISHING 
+[debug] [2020-05-16T22:39:32.425Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:39:32.431Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:39:32.432Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:39:32.432Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:39:32.432Z] [worker-~diagnostic~-ea7cf2e0-e779-48c2-9ffa-0910e065b377]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40152.sock 
+[debug] [2020-05-16T22:39:32.432Z] [worker-~diagnostic~-ea7cf2e0-e779-48c2-9ffa-0910e065b377]: BUSY 
+[debug] [2020-05-16T22:39:32.434Z] [worker-~diagnostic~-ebdf7015-b866-46bb-be6f-101048fc9b1a]: exited 
+[debug] [2020-05-16T22:39:32.434Z] [worker-~diagnostic~-ebdf7015-b866-46bb-be6f-101048fc9b1a]: FINISHED 
+[debug] [2020-05-16T22:39:32.778Z] [runtime-status] [40152] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:39:32.780Z] [runtime-status] [40152] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:39:32.784Z] [runtime-status] [40152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:32.785Z] [runtime-status] [40152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:39:32.787Z] [runtime-status] [40152] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:39:32.820Z] [runtime-status] [40152] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:39:32.821Z] [runtime-status] [40152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:32.822Z] [runtime-status] [40152] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:39:32.822Z] [runtime-status] [40152] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:39:32.822Z] [runtime-status] [40152] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:39:32.904Z] [runtime-status] [40152] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[info] ✔  functions[cancelReservation]: http function initialized (http://localhost:5001/restaurant-reservations-144e5/us-central1/cancelReservation).
+[debug] [2020-05-16T22:39:32.907Z] [worker-~diagnostic~-ea7cf2e0-e779-48c2-9ffa-0910e065b377]: IDLE 
+[debug] [2020-05-16T22:43:21.597Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-16T22:43:21.597Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T22:43:21.598Z] Accepted request OPTIONS /restaurant-reservations-144e5/us-central1/cancelReservation --> cancelReservation
+[debug] [2020-05-16T22:43:21.598Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:43:21.603Z] [worker-pool] addWorker(cancelReservation) 
+[debug] [2020-05-16T22:43:21.603Z] [worker-pool] Adding worker with key cancelReservation, total=1 
+[debug] [2020-05-16T22:43:21.603Z] [worker-pool] submitWork(triggerId=cancelReservation) 
+[debug] [2020-05-16T22:43:21.604Z] [worker-cancelReservation-6786740a-1bdc-4fac-baba-713fa409af39]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40275.sock 
+[debug] [2020-05-16T22:43:21.604Z] [worker-cancelReservation-6786740a-1bdc-4fac-baba-713fa409af39]: BUSY 
+[debug] [2020-05-16T22:43:21.952Z] [runtime-status] [40275] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:43:21.953Z] [runtime-status] [40275] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:43:21.958Z] [runtime-status] [40275] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:43:21.959Z] [runtime-status] [40275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:43:21.961Z] [runtime-status] [40275] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:43:21.990Z] [runtime-status] [40275] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:43:21.991Z] [runtime-status] [40275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:43:21.992Z] [runtime-status] [40275] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:43:21.992Z] [runtime-status] [40275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:43:21.992Z] [runtime-status] [40275] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:43:22.065Z] [runtime-status] [40275] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:43:22.067Z] [runtime-status] [40275] Trigger "cancelReservation" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "cancelReservation"
+[debug] [2020-05-16T22:43:22.068Z] [runtime-status] [40275] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"cancelReservation","entryPoint":"cancelReservation"} 
+[debug] [2020-05-16T22:43:22.068Z] [runtime-status] [40275] Running cancelReservation in mode HTTPS 
+[debug] [2020-05-16T22:43:22.071Z] [runtime-status] [40275] Attempting to listen to socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40275.sock 
+[debug] [2020-05-16T22:43:22.074Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T22:43:22.081Z] [runtime-status] [40275] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T22:43:22.086Z] [runtime-status] [40275] Ephemeral server survived. 
+[debug] [2020-05-16T22:43:22.087Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T22:43:22.087Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T22:43:22.087Z] Accepted request POST /restaurant-reservations-144e5/us-central1/cancelReservation --> cancelReservation
+[debug] [2020-05-16T22:43:22.087Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImY1YzlhZWJlMjM0ZGE2MDE2YmQ3Yjk0OTE2OGI4Y2Q1YjRlYzllZWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmVzdGF1cmFudC1yZXNlcnZhdGlvbnMtMTQ0ZTUiLCJhdWQiOiJyZXN0YXVyYW50LXJlc2VydmF0aW9ucy0xNDRlNSIsImF1dGhfdGltZSI6MTU4OTY2MzE2OCwidXNlcl9pZCI6IjE1cUpHZExnR2VNMnp0cXBLVkNVRlYxU0x4NTIiLCJzdWIiOiIxNXFKR2RMZ0dlTTJ6dHFwS1ZDVUZWMVNMeDUyIiwiaWF0IjoxNTg5NjY2NzQ0LCJleHAiOjE1ODk2NzAzNDQsImVtYWlsIjoic2hhdW4uZmlyZWJhc2UudGVzdDFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsic2hhdW4uZmlyZWJhc2UudGVzdDFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.QvFK-P5fK3i2neqTsXdLGTYopWABjn6I8ZGxJpmHFBgUoNI7FHry3OwOCP0DWk6kP-muGAfd8uGr_JEDYHayR16zuj_WCWWugK-3hT9ErqSyqKVPnb3I7JylstzRSR0gIcctLYzafHnkxT1hRE4qz3qeV76evP5vC8n6Wg-jc7JUvatZo41Nod-b6NC3FQ2EeqW3XAWHi-ErOrx60XV8aYNDPrnn4SreEKoHPfHIA9SPkxtBNDZudmXncxDaIp4FSeQNxGBZXOlQ1FQ3lUP_4SltjW9dAkGawjHhY4xyWMzf719QKFVWLDVWDGORrqluAWAUFnSLcvqfpKhxenSnAw
+[debug] [2020-05-16T22:43:22.093Z] [worker-pool] addWorker(cancelReservation) 
+[debug] [2020-05-16T22:43:22.093Z] [worker-pool] Adding worker with key cancelReservation, total=2 
+[debug] [2020-05-16T22:43:22.093Z] [worker-pool] submitWork(triggerId=cancelReservation) 
+[debug] [2020-05-16T22:43:22.093Z] [worker-cancelReservation-ae148228-00b4-40d0-8fa0-56bf47bb95cf]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40276.sock 
+[debug] [2020-05-16T22:43:22.093Z] [worker-cancelReservation-ae148228-00b4-40d0-8fa0-56bf47bb95cf]: BUSY 
+[info] i  functions: Finished "cancelReservation" in ~1s
+[debug] [2020-05-16T22:43:22.094Z] [worker-cancelReservation-6786740a-1bdc-4fac-baba-713fa409af39]: IDLE 
+[debug] [2020-05-16T22:43:22.095Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T22:43:22.434Z] [runtime-status] [40276] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:43:22.436Z] [runtime-status] [40276] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:43:22.438Z] [runtime-status] [40276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:43:22.439Z] [runtime-status] [40276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:43:22.441Z] [runtime-status] [40276] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:43:22.470Z] [runtime-status] [40276] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:43:22.470Z] [runtime-status] [40276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:43:22.471Z] [runtime-status] [40276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:43:22.471Z] [runtime-status] [40276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:43:22.472Z] [runtime-status] [40276] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:43:22.544Z] [runtime-status] [40276] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:43:22.545Z] [runtime-status] [40276] Trigger "cancelReservation" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "cancelReservation"
+[debug] [2020-05-16T22:43:22.546Z] [runtime-status] [40276] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"cancelReservation","entryPoint":"cancelReservation"} 
+[debug] [2020-05-16T22:43:22.546Z] [runtime-status] [40276] Running cancelReservation in mode HTTPS 
+[debug] [2020-05-16T22:43:22.549Z] [runtime-status] [40276] Attempting to listen to socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40276.sock 
+[debug] [2020-05-16T22:43:22.551Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T22:43:22.578Z] [runtime-status] [40276] Ephemeral server handling POST request 
+[debug] [2020-05-16T22:43:22.579Z] [runtime-status] [40276] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"token\":{\"iss\":\"https://securetoken.google.com/restaurant-reservations-144e5\",\"aud\":\"restaurant-reservations-144e5\",\"auth_time\":1589663168,\"user_id\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"sub\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"iat\":1589666744,\"exp\":1589670344,\"email\":\"shaun.firebase.test1@gmail.com\",\"email_verified\":true,\"firebase\":{\"identities\":{\"email\":[\"shaun.firebase.test1@gmail.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\"}}"} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-16T22:43:22.919Z] [runtime-status] [40276] Ephemeral server survived. 
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] >  Unhandled error ReferenceError: queryResults is not defined {"user":"Unhandled error ReferenceError: queryResults is not defined"}
+[info] >      at _callee$ (/Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js:60:13) {"user":"    at _callee$ (/Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js:60:13)"}
+[info] >      at tryCatch (/Users/shaunw/repos/firebase-demo-app/functions/node_modules/regenerator-runtime/runtime.js:45:40) {"user":"    at tryCatch (/Users/shaunw/repos/firebase-demo-app/functions/node_modules/regenerator-runtime/runtime.js:45:40)"}
+[info] >      at Generator.invoke [as _invoke] (/Users/shaunw/repos/firebase-demo-app/functions/node_modules/regenerator-runtime/runtime.js:274:22) {"user":"    at Generator.invoke [as _invoke] (/Users/shaunw/repos/firebase-demo-app/functions/node_modules/regenerator-runtime/runtime.js:274:22)"}
+[info] >      at Generator.prototype.<computed> [as next] (/Users/shaunw/repos/firebase-demo-app/functions/node_modules/regenerator-runtime/runtime.js:97:21) {"user":"    at Generator.prototype.<computed> [as next] (/Users/shaunw/repos/firebase-demo-app/functions/node_modules/regenerator-runtime/runtime.js:97:21)"}
+[info] >      at asyncGeneratorStep (/Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js:18:103) {"user":"    at asyncGeneratorStep (/Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js:18:103)"}
+[info] >      at _next (/Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js:20:194) {"user":"    at _next (/Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js:20:194)"}
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:97:5) {"user":"    at processTicksAndRejections (internal/process/task_queues.js:97:5)"}
+[info] i  functions: Finished "cancelReservation" in ~1s
+[debug] [2020-05-16T22:43:23.810Z] [worker-cancelReservation-ae148228-00b4-40d0-8fa0-56bf47bb95cf]: IDLE 
+[debug] [2020-05-16T22:43:23.810Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-16T22:45:17.802Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-16T22:45:17.802Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T22:45:17.802Z] Accepted request OPTIONS /restaurant-reservations-144e5/us-central1/makeReservation --> makeReservation
+[debug] [2020-05-16T22:45:17.808Z] [worker-pool] addWorker(makeReservation) 
+[debug] [2020-05-16T22:45:17.808Z] [worker-pool] Adding worker with key makeReservation, total=1 
+[debug] [2020-05-16T22:45:17.808Z] [worker-pool] submitWork(triggerId=makeReservation) 
+[debug] [2020-05-16T22:45:17.809Z] [worker-makeReservation-aad71d64-2560-4226-9e99-9a59a3c16888]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40324.sock 
+[debug] [2020-05-16T22:45:17.809Z] [worker-makeReservation-aad71d64-2560-4226-9e99-9a59a3c16888]: BUSY 
+[debug] [2020-05-16T22:45:18.130Z] [runtime-status] [40324] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:45:18.132Z] [runtime-status] [40324] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:45:18.134Z] [runtime-status] [40324] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.134Z] [runtime-status] [40324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:45:18.136Z] [runtime-status] [40324] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:45:18.165Z] [runtime-status] [40324] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:45:18.166Z] [runtime-status] [40324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.166Z] [runtime-status] [40324] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.167Z] [runtime-status] [40324] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.167Z] [runtime-status] [40324] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:45:18.231Z] [runtime-status] [40324] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:45:18.232Z] [runtime-status] [40324] Trigger "makeReservation" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "makeReservation"
+[debug] [2020-05-16T22:45:18.232Z] [runtime-status] [40324] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"makeReservation","entryPoint":"makeReservation"} 
+[debug] [2020-05-16T22:45:18.232Z] [runtime-status] [40324] Running makeReservation in mode HTTPS 
+[debug] [2020-05-16T22:45:18.236Z] [runtime-status] [40324] Attempting to listen to socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40324.sock 
+[debug] [2020-05-16T22:45:18.238Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T22:45:18.243Z] [runtime-status] [40324] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T22:45:18.248Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T22:45:18.248Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T22:45:18.248Z] Accepted request POST /restaurant-reservations-144e5/us-central1/makeReservation --> makeReservation
+[debug] [2020-05-16T22:45:18.248Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImY1YzlhZWJlMjM0ZGE2MDE2YmQ3Yjk0OTE2OGI4Y2Q1YjRlYzllZWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmVzdGF1cmFudC1yZXNlcnZhdGlvbnMtMTQ0ZTUiLCJhdWQiOiJyZXN0YXVyYW50LXJlc2VydmF0aW9ucy0xNDRlNSIsImF1dGhfdGltZSI6MTU4OTY2MzE2OCwidXNlcl9pZCI6IjE1cUpHZExnR2VNMnp0cXBLVkNVRlYxU0x4NTIiLCJzdWIiOiIxNXFKR2RMZ0dlTTJ6dHFwS1ZDVUZWMVNMeDUyIiwiaWF0IjoxNTg5NjY2NzQ0LCJleHAiOjE1ODk2NzAzNDQsImVtYWlsIjoic2hhdW4uZmlyZWJhc2UudGVzdDFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsic2hhdW4uZmlyZWJhc2UudGVzdDFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.QvFK-P5fK3i2neqTsXdLGTYopWABjn6I8ZGxJpmHFBgUoNI7FHry3OwOCP0DWk6kP-muGAfd8uGr_JEDYHayR16zuj_WCWWugK-3hT9ErqSyqKVPnb3I7JylstzRSR0gIcctLYzafHnkxT1hRE4qz3qeV76evP5vC8n6Wg-jc7JUvatZo41Nod-b6NC3FQ2EeqW3XAWHi-ErOrx60XV8aYNDPrnn4SreEKoHPfHIA9SPkxtBNDZudmXncxDaIp4FSeQNxGBZXOlQ1FQ3lUP_4SltjW9dAkGawjHhY4xyWMzf719QKFVWLDVWDGORrqluAWAUFnSLcvqfpKhxenSnAw
+[debug] [2020-05-16T22:45:18.253Z] [worker-pool] addWorker(makeReservation) 
+[debug] [2020-05-16T22:45:18.253Z] [worker-pool] Adding worker with key makeReservation, total=2 
+[debug] [2020-05-16T22:45:18.253Z] [worker-pool] submitWork(triggerId=makeReservation) 
+[debug] [2020-05-16T22:45:18.253Z] [worker-makeReservation-d0719f25-d379-4f0f-a4b3-c0870e6bad6a]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40325.sock 
+[debug] [2020-05-16T22:45:18.254Z] [worker-makeReservation-d0719f25-d379-4f0f-a4b3-c0870e6bad6a]: BUSY 
+[debug] [2020-05-16T22:45:18.254Z] [runtime-status] [40324] Ephemeral server survived. 
+[info] i  functions: Finished "makeReservation" in ~1s
+[debug] [2020-05-16T22:45:18.254Z] [worker-makeReservation-aad71d64-2560-4226-9e99-9a59a3c16888]: IDLE 
+[debug] [2020-05-16T22:45:18.254Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T22:45:18.569Z] [runtime-status] [40325] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:45:18.571Z] [runtime-status] [40325] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:45:18.575Z] [runtime-status] [40325] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.576Z] [runtime-status] [40325] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:45:18.578Z] [runtime-status] [40325] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:45:18.605Z] [runtime-status] [40325] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:45:18.606Z] [runtime-status] [40325] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.606Z] [runtime-status] [40325] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.607Z] [runtime-status] [40325] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:45:18.607Z] [runtime-status] [40325] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:45:18.674Z] [runtime-status] [40325] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:45:18.675Z] [runtime-status] [40325] Trigger "makeReservation" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "makeReservation"
+[debug] [2020-05-16T22:45:18.676Z] [runtime-status] [40325] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"makeReservation","entryPoint":"makeReservation"} 
+[debug] [2020-05-16T22:45:18.676Z] [runtime-status] [40325] Running makeReservation in mode HTTPS 
+[debug] [2020-05-16T22:45:18.680Z] [runtime-status] [40325] Attempting to listen to socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40325.sock 
+[debug] [2020-05-16T22:45:18.682Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T22:45:18.696Z] [runtime-status] [40325] Ephemeral server handling POST request 
+[debug] [2020-05-16T22:45:18.698Z] [runtime-status] [40325] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"token\":{\"iss\":\"https://securetoken.google.com/restaurant-reservations-144e5\",\"aud\":\"restaurant-reservations-144e5\",\"auth_time\":1589663168,\"user_id\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"sub\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"iat\":1589666744,\"exp\":1589670344,\"email\":\"shaun.firebase.test1@gmail.com\",\"email_verified\":true,\"firebase\":{\"identities\":{\"email\":[\"shaun.firebase.test1@gmail.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\"}}"} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-16T22:45:18.879Z] [runtime-status] [40325] Ephemeral server survived. 
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "makeReservation" in ~1s
+[debug] [2020-05-16T22:45:19.841Z] [worker-makeReservation-d0719f25-d379-4f0f-a4b3-c0870e6bad6a]: IDLE 
+[debug] [2020-05-16T22:45:19.842Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-16T22:50:08.973Z] File /Users/shaunw/repos/firebase-demo-app/functions/src/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:09.978Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:50:09.978Z] [worker-~diagnostic~-ea7cf2e0-e779-48c2-9ffa-0910e065b377]: FINISHING 
+[debug] [2020-05-16T22:50:09.978Z] [worker-pool] Shutting down IDLE worker (cancelReservation) 
+[debug] [2020-05-16T22:50:09.978Z] [worker-cancelReservation-6786740a-1bdc-4fac-baba-713fa409af39]: FINISHING 
+[debug] [2020-05-16T22:50:09.978Z] [worker-pool] Shutting down IDLE worker (cancelReservation) 
+[debug] [2020-05-16T22:50:09.978Z] [worker-cancelReservation-ae148228-00b4-40d0-8fa0-56bf47bb95cf]: FINISHING 
+[debug] [2020-05-16T22:50:09.978Z] [worker-pool] Shutting down IDLE worker (makeReservation) 
+[debug] [2020-05-16T22:50:09.978Z] [worker-makeReservation-aad71d64-2560-4226-9e99-9a59a3c16888]: FINISHING 
+[debug] [2020-05-16T22:50:09.978Z] [worker-pool] Shutting down IDLE worker (makeReservation) 
+[debug] [2020-05-16T22:50:09.978Z] [worker-makeReservation-d0719f25-d379-4f0f-a4b3-c0870e6bad6a]: FINISHING 
+[debug] [2020-05-16T22:50:10.004Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:50:10.004Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:50:10.004Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:50:10.005Z] [worker-~diagnostic~-5616e5bf-049e-4708-8094-38dc6b99eda4]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40431.sock 
+[debug] [2020-05-16T22:50:10.005Z] [worker-~diagnostic~-5616e5bf-049e-4708-8094-38dc6b99eda4]: BUSY 
+[debug] [2020-05-16T22:50:10.008Z] [worker-~diagnostic~-ea7cf2e0-e779-48c2-9ffa-0910e065b377]: exited 
+[debug] [2020-05-16T22:50:10.008Z] [worker-~diagnostic~-ea7cf2e0-e779-48c2-9ffa-0910e065b377]: FINISHED 
+[debug] [2020-05-16T22:50:10.009Z] [worker-cancelReservation-6786740a-1bdc-4fac-baba-713fa409af39]: exited 
+[debug] [2020-05-16T22:50:10.009Z] [worker-cancelReservation-6786740a-1bdc-4fac-baba-713fa409af39]: FINISHED 
+[debug] [2020-05-16T22:50:10.009Z] [worker-cancelReservation-ae148228-00b4-40d0-8fa0-56bf47bb95cf]: exited 
+[debug] [2020-05-16T22:50:10.009Z] [worker-cancelReservation-ae148228-00b4-40d0-8fa0-56bf47bb95cf]: FINISHED 
+[debug] [2020-05-16T22:50:10.009Z] [worker-makeReservation-aad71d64-2560-4226-9e99-9a59a3c16888]: exited 
+[debug] [2020-05-16T22:50:10.009Z] [worker-makeReservation-aad71d64-2560-4226-9e99-9a59a3c16888]: FINISHED 
+[debug] [2020-05-16T22:50:10.010Z] [worker-makeReservation-d0719f25-d379-4f0f-a4b3-c0870e6bad6a]: exited 
+[debug] [2020-05-16T22:50:10.010Z] [worker-makeReservation-d0719f25-d379-4f0f-a4b3-c0870e6bad6a]: FINISHED 
+[debug] [2020-05-16T22:50:10.387Z] [runtime-status] [40431] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:50:10.388Z] [runtime-status] [40431] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:50:10.391Z] [runtime-status] [40431] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:10.392Z] [runtime-status] [40431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:50:10.394Z] [runtime-status] [40431] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:50:10.426Z] [runtime-status] [40431] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:50:10.427Z] [runtime-status] [40431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:10.428Z] [runtime-status] [40431] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:10.428Z] [runtime-status] [40431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:10.429Z] [runtime-status] [40431] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:50:10.510Z] [runtime-status] [40431] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:50:10.511Z] [worker-~diagnostic~-5616e5bf-049e-4708-8094-38dc6b99eda4]: IDLE 
+[debug] [2020-05-16T22:50:10.739Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:10.740Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/helloWorld.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:10.843Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:10.843Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:10.843Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:10.945Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/submitReview.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:10.945Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/makeReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.051Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/confirmEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.051Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAuthUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.051Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAccount.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.155Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createTemporaryUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.155Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.155Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.156Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:11.156Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendVerificationEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:12.161Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:50:12.161Z] [worker-~diagnostic~-5616e5bf-049e-4708-8094-38dc6b99eda4]: FINISHING 
+[debug] [2020-05-16T22:50:12.162Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:50:12.162Z] [worker-pool] Cleaned up workers for cancelReservation: 2 --> 0 
+[debug] [2020-05-16T22:50:12.162Z] [worker-pool] Cleaned up workers for makeReservation: 2 --> 0 
+[debug] [2020-05-16T22:50:12.169Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:50:12.169Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:50:12.169Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:50:12.169Z] [worker-~diagnostic~-7171ca4b-e26a-4096-9b78-20e7ffa46f2f]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40439.sock 
+[debug] [2020-05-16T22:50:12.169Z] [worker-~diagnostic~-7171ca4b-e26a-4096-9b78-20e7ffa46f2f]: BUSY 
+[debug] [2020-05-16T22:50:12.171Z] [worker-~diagnostic~-5616e5bf-049e-4708-8094-38dc6b99eda4]: exited 
+[debug] [2020-05-16T22:50:12.172Z] [worker-~diagnostic~-5616e5bf-049e-4708-8094-38dc6b99eda4]: FINISHED 
+[debug] [2020-05-16T22:50:12.473Z] [runtime-status] [40439] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:50:12.475Z] [runtime-status] [40439] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:50:12.477Z] [runtime-status] [40439] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:12.478Z] [runtime-status] [40439] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:50:12.479Z] [runtime-status] [40439] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:50:12.504Z] [runtime-status] [40439] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:50:12.505Z] [runtime-status] [40439] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:12.506Z] [runtime-status] [40439] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:12.507Z] [runtime-status] [40439] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:12.507Z] [runtime-status] [40439] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:50:12.573Z] [runtime-status] [40439] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:50:12.574Z] [worker-~diagnostic~-7171ca4b-e26a-4096-9b78-20e7ffa46f2f]: IDLE 
+[debug] [2020-05-16T22:50:20.411Z] File /Users/shaunw/repos/firebase-demo-app/functions/src/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:21.414Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:50:21.414Z] [worker-~diagnostic~-7171ca4b-e26a-4096-9b78-20e7ffa46f2f]: FINISHING 
+[debug] [2020-05-16T22:50:21.414Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:50:21.423Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:50:21.424Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:50:21.424Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:50:21.424Z] [worker-~diagnostic~-a949a134-8aaa-42d0-a0ff-379d34493b9c]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40457.sock 
+[debug] [2020-05-16T22:50:21.424Z] [worker-~diagnostic~-a949a134-8aaa-42d0-a0ff-379d34493b9c]: BUSY 
+[debug] [2020-05-16T22:50:21.426Z] [worker-~diagnostic~-7171ca4b-e26a-4096-9b78-20e7ffa46f2f]: exited 
+[debug] [2020-05-16T22:50:21.426Z] [worker-~diagnostic~-7171ca4b-e26a-4096-9b78-20e7ffa46f2f]: FINISHED 
+[debug] [2020-05-16T22:50:21.864Z] [runtime-status] [40457] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:50:21.868Z] [runtime-status] [40457] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:50:21.870Z] [runtime-status] [40457] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:21.871Z] [runtime-status] [40457] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:50:21.873Z] [runtime-status] [40457] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:50:21.912Z] [runtime-status] [40457] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:50:21.913Z] [runtime-status] [40457] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:21.914Z] [runtime-status] [40457] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:21.915Z] [runtime-status] [40457] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:21.916Z] [runtime-status] [40457] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:50:21.994Z] [runtime-status] [40457] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:50:21.996Z] [worker-~diagnostic~-a949a134-8aaa-42d0-a0ff-379d34493b9c]: IDLE 
+[debug] [2020-05-16T22:50:22.062Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/helloWorld.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.164Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.267Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.268Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.268Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/cancelReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.368Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/confirmEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.368Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/makeReservation.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.368Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/reservations/submitReview.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.468Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAccount.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.468Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/functions.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.468Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.469Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/index.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.469Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createTemporaryUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.469Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/createAuthUser.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:22.568Z] File /Users/shaunw/repos/firebase-demo-app/functions/build/users/sendVerificationEmail.js changed, reloading triggers 
+[debug] [2020-05-16T22:50:23.572Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-16T22:50:23.572Z] [worker-~diagnostic~-a949a134-8aaa-42d0-a0ff-379d34493b9c]: FINISHING 
+[debug] [2020-05-16T22:50:23.573Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:50:23.579Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-16T22:50:23.579Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-16T22:50:23.579Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-16T22:50:23.579Z] [worker-~diagnostic~-afc12634-5898-46da-b727-d9b26f9c6456]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40460.sock 
+[debug] [2020-05-16T22:50:23.579Z] [worker-~diagnostic~-afc12634-5898-46da-b727-d9b26f9c6456]: BUSY 
+[debug] [2020-05-16T22:50:23.582Z] [worker-~diagnostic~-a949a134-8aaa-42d0-a0ff-379d34493b9c]: exited 
+[debug] [2020-05-16T22:50:23.582Z] [worker-~diagnostic~-a949a134-8aaa-42d0-a0ff-379d34493b9c]: FINISHED 
+[debug] [2020-05-16T22:50:23.910Z] [runtime-status] [40460] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:50:23.911Z] [runtime-status] [40460] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:50:23.913Z] [runtime-status] [40460] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:23.914Z] [runtime-status] [40460] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:50:23.916Z] [runtime-status] [40460] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:50:23.944Z] [runtime-status] [40460] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:50:23.944Z] [runtime-status] [40460] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:23.945Z] [runtime-status] [40460] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:50:23.946Z] [runtime-status] [40460] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:50:23.946Z] [runtime-status] [40460] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:50:24.028Z] [runtime-status] [40460] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:50:24.030Z] [worker-~diagnostic~-afc12634-5898-46da-b727-d9b26f9c6456]: IDLE 
+[debug] [2020-05-16T22:51:51.230Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-16T22:51:51.230Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T22:51:51.230Z] Accepted request OPTIONS /restaurant-reservations-144e5/us-central1/cancelReservation --> cancelReservation
+[debug] [2020-05-16T22:51:51.230Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-05-16T22:51:51.236Z] [worker-pool] addWorker(cancelReservation) 
+[debug] [2020-05-16T22:51:51.236Z] [worker-pool] Adding worker with key cancelReservation, total=1 
+[debug] [2020-05-16T22:51:51.236Z] [worker-pool] submitWork(triggerId=cancelReservation) 
+[debug] [2020-05-16T22:51:51.236Z] [worker-cancelReservation-c03d8a8a-3631-4038-bfcc-555cb9ddd04e]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40504.sock 
+[debug] [2020-05-16T22:51:51.236Z] [worker-cancelReservation-c03d8a8a-3631-4038-bfcc-555cb9ddd04e]: BUSY 
+[debug] [2020-05-16T22:51:51.577Z] [runtime-status] [40504] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:51:51.579Z] [runtime-status] [40504] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:51:51.581Z] [runtime-status] [40504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:51:51.582Z] [runtime-status] [40504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:51:51.584Z] [runtime-status] [40504] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:51:51.612Z] [runtime-status] [40504] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:51:51.613Z] [runtime-status] [40504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:51:51.614Z] [runtime-status] [40504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:51:51.614Z] [runtime-status] [40504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:51:51.614Z] [runtime-status] [40504] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:51:51.686Z] [runtime-status] [40504] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:51:51.688Z] [runtime-status] [40504] Trigger "cancelReservation" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "cancelReservation"
+[debug] [2020-05-16T22:51:51.688Z] [runtime-status] [40504] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"cancelReservation","entryPoint":"cancelReservation"} 
+[debug] [2020-05-16T22:51:51.688Z] [runtime-status] [40504] Running cancelReservation in mode HTTPS 
+[debug] [2020-05-16T22:51:51.692Z] [runtime-status] [40504] Attempting to listen to socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40504.sock 
+[debug] [2020-05-16T22:51:51.694Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T22:51:51.700Z] [runtime-status] [40504] Ephemeral server handling OPTIONS request 
+[debug] [2020-05-16T22:51:51.704Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-05-16T22:51:51.705Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-05-16T22:51:51.705Z] Accepted request POST /restaurant-reservations-144e5/us-central1/cancelReservation --> cancelReservation
+[debug] [2020-05-16T22:51:51.705Z] ID Token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImY1YzlhZWJlMjM0ZGE2MDE2YmQ3Yjk0OTE2OGI4Y2Q1YjRlYzllZWIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmVzdGF1cmFudC1yZXNlcnZhdGlvbnMtMTQ0ZTUiLCJhdWQiOiJyZXN0YXVyYW50LXJlc2VydmF0aW9ucy0xNDRlNSIsImF1dGhfdGltZSI6MTU4OTY2MzE2OCwidXNlcl9pZCI6IjE1cUpHZExnR2VNMnp0cXBLVkNVRlYxU0x4NTIiLCJzdWIiOiIxNXFKR2RMZ0dlTTJ6dHFwS1ZDVUZWMVNMeDUyIiwiaWF0IjoxNTg5NjY2NzQ0LCJleHAiOjE1ODk2NzAzNDQsImVtYWlsIjoic2hhdW4uZmlyZWJhc2UudGVzdDFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsic2hhdW4uZmlyZWJhc2UudGVzdDFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.QvFK-P5fK3i2neqTsXdLGTYopWABjn6I8ZGxJpmHFBgUoNI7FHry3OwOCP0DWk6kP-muGAfd8uGr_JEDYHayR16zuj_WCWWugK-3hT9ErqSyqKVPnb3I7JylstzRSR0gIcctLYzafHnkxT1hRE4qz3qeV76evP5vC8n6Wg-jc7JUvatZo41Nod-b6NC3FQ2EeqW3XAWHi-ErOrx60XV8aYNDPrnn4SreEKoHPfHIA9SPkxtBNDZudmXncxDaIp4FSeQNxGBZXOlQ1FQ3lUP_4SltjW9dAkGawjHhY4xyWMzf719QKFVWLDVWDGORrqluAWAUFnSLcvqfpKhxenSnAw
+[debug] [2020-05-16T22:51:51.710Z] [worker-pool] addWorker(cancelReservation) 
+[debug] [2020-05-16T22:51:51.710Z] [worker-pool] Adding worker with key cancelReservation, total=2 
+[debug] [2020-05-16T22:51:51.710Z] [worker-pool] submitWork(triggerId=cancelReservation) 
+[debug] [2020-05-16T22:51:51.710Z] [worker-cancelReservation-d57298fb-4760-48f1-8ce5-2568d6eb324c]: Assigning socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40505.sock 
+[debug] [2020-05-16T22:51:51.710Z] [worker-cancelReservation-d57298fb-4760-48f1-8ce5-2568d6eb324c]: BUSY 
+[debug] [2020-05-16T22:51:51.711Z] [runtime-status] [40504] Ephemeral server survived. 
+[info] i  functions: Finished "cancelReservation" in ~1s
+[debug] [2020-05-16T22:51:51.711Z] [worker-cancelReservation-c03d8a8a-3631-4038-bfcc-555cb9ddd04e]: IDLE 
+[debug] [2020-05-16T22:51:51.712Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-16T22:51:52.055Z] [runtime-status] [40505] Functions runtime initialized. {"cwd":"/Users/shaunw/repos/firebase-demo-app/functions","node_version":"12.16.1"} 
+[debug] [2020-05-16T22:51:52.057Z] [runtime-status] [40505] Disabled runtime features: undefined 
+[debug] [2020-05-16T22:51:52.059Z] [runtime-status] [40505] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:51:52.060Z] [runtime-status] [40505] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[warn] ⚠  functions: Your GOOGLE_APPLICATION_CREDENTIALS environment variable points to /Users/shaunw/.firebase/restaurant-reservations-144e5-c1917b02af3c.json. Non-emulated services will access production using these credentials. Be careful!
+[debug] [2020-05-16T22:51:52.062Z] [runtime-status] [40505] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-16T22:51:52.091Z] [runtime-status] [40505] Checked functions.config() {"config":{}} 
+[debug] [2020-05-16T22:51:52.092Z] [runtime-status] [40505] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:51:52.092Z] [runtime-status] [40505] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-16T22:51:52.093Z] [runtime-status] [40505] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-16T22:51:52.093Z] [runtime-status] [40505] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.12.1","resolution":"/Users/shaunw/repos/firebase-demo-app/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-16T22:51:52.165Z] [runtime-status] [40505] initializeApp(DEFAULT) {"databaseURL":"https://restaurant-reservations-144e5.firebaseio.com","storageBucket":"restaurant-reservations-144e5.appspot.com","projectId":"restaurant-reservations-144e5"} 
+[debug] [2020-05-16T22:51:52.166Z] [runtime-status] [40505] Trigger "cancelReservation" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "cancelReservation"
+[debug] [2020-05-16T22:51:52.166Z] [runtime-status] [40505] triggerDefinition {"httpsTrigger":{},"labels":{"deployment-callable":"true"},"name":"cancelReservation","entryPoint":"cancelReservation"} 
+[debug] [2020-05-16T22:51:52.166Z] [runtime-status] [40505] Running cancelReservation in mode HTTPS 
+[debug] [2020-05-16T22:51:52.170Z] [runtime-status] [40505] Attempting to listen to socketPath: /var/folders/tl/wt84z9_n44d28n3s35nxjv3m0000gp/T/fire_emu_40505.sock 
+[debug] [2020-05-16T22:51:52.172Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-16T22:51:52.187Z] [runtime-status] [40505] Ephemeral server handling POST request 
+[debug] [2020-05-16T22:51:52.189Z] [runtime-status] [40505] Callable functions auth override {"key":"x-callable-context-auth","value":"{\"uid\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"token\":{\"iss\":\"https://securetoken.google.com/restaurant-reservations-144e5\",\"aud\":\"restaurant-reservations-144e5\",\"auth_time\":1589663168,\"user_id\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"sub\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\",\"iat\":1589666744,\"exp\":1589670344,\"email\":\"shaun.firebase.test1@gmail.com\",\"email_verified\":true,\"firebase\":{\"identities\":{\"email\":[\"shaun.firebase.test1@gmail.com\"]},\"sign_in_provider\":\"password\"},\"uid\":\"15qJGdLgGeM2ztqpKVCUFV1SLx52\"}}"} 
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[debug] [2020-05-16T22:51:52.394Z] [runtime-status] [40505] Ephemeral server survived. 
+[warn] ⚠  Google API requested!
+   - URL: "https://www.googleapis.com/oauth2/v4/token"
+   - Be careful, this may be a production service.
+[info] i  functions: Finished "cancelReservation" in ~1s
+[debug] [2020-05-16T22:51:53.528Z] [worker-cancelReservation-d57298fb-4760-48f1-8ce5-2568d6eb324c]: IDLE 
+[debug] [2020-05-16T22:51:53.529Z] [work-queue] {"queueLength":0,"workRunningCount":0}
