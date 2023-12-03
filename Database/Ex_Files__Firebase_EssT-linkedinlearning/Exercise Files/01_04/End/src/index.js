@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as firebase from 'firebase/app';
-import 'firebase/analytics';
+
 import './index.css';
 import { App, serviceWorker } from './app';
-
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
+import * as firebase from 'firebase/app';
+import 'firebase/analytics';
 
 var firebaseConfig = {
   apiKey: "AIzaSyC-_3VqcHq-SAMcFiFKwpCZS0rtOY8-olk",
