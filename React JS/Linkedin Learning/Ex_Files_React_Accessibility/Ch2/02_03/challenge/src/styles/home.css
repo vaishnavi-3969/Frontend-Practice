@@ -1,0 +1,14 @@
+button {
+  font-family: Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  background-color: #fff;
+  color: #483e40;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: .75rem;
+  text-transform: uppercase;
+}
