@@ -18,19 +18,26 @@ function App() {
 function StarRating({ totalStars = 5 }) {
   const [selectedStars, setSelectedStars] = useState(0);
 
-  return createArray(totalStars).map((n, i) => (
-    <Star
-      key={i}
-      selected={selectedStars > i}
-      onSelect={() => setSelectedStars(i + 1)
-      }
-    />
-  ));
+  return (
+    <>
+      {createArray(totalStars).map((n, i) => (
+        <Star
+          key={i}
+          selected={selectedStars > i}
+          onSelect={() => setSelectedStars(i + 1)}
+        />
+      ))}
+      <p>
+        {selectedStars} of {totalStars} stars
+      </p>
+    </>
+  );
 }
 
 function Star({ selected = false, onSelect }) {
   return <img
     src={selected ? FaStar : FiStar}
+    
     alt='star'
     onClick={onSelect}
     style={{ height: "30px", cursor: 'pointer' }}
