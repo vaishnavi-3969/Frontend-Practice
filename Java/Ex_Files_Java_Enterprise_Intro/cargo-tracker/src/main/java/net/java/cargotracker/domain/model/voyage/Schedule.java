@@ -1,8 +1,7 @@
 package net.java.cargotracker.domain.model.voyage;
 
-import java.io.Serializable;
-import java.util.Collections;
-import java.util.List;
+import org.apache.commons.lang3.Validate;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Embeddable;
@@ -10,10 +9,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
-import org.apache.commons.lang3.Validate;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.eclipse.persistence.annotations.PrivateOwned;
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.List;
+//import org.eclipse.persistence.annotations.PrivateOwned;
 
 /**
  * A voyage schedule.
@@ -28,7 +27,7 @@ public class Schedule implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "voyage_id")
     // TODO Index as cm_index
-    @PrivateOwned
+
     @NotNull
     @Size(min = 1)
     private List<CarrierMovement> carrierMovements = Collections.emptyList();

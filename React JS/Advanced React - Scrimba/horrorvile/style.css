@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "RubikDistressed";
-    src: url("/fonts/RubikDistressed-Regular.ttf") format("truetype");
-}
+
 
 body {
     margin: 0;

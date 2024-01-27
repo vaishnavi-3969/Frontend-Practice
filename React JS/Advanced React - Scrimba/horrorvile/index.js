@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Marquee from "./Marquee"
+import Button from "./Button"
+
+/**
+ * Challenge: Make the Button accept and display children.
+ * 
+ * Change the text to say "Buy now!" so it's less boring 🥱
+ */
 
 function App() {
   return (
     <main>
-      <Marquee text="🧛‍♀️ Welcome to Horrorville 🧛‍♀️" />
+      <Button text="Click here" />
     </main>
   )
 }

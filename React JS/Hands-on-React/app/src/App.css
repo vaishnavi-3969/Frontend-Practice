@@ -1,0 +1,53 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+summary {
+  font-family: 'Bungee', sans-serif;
+  color: var(--primary);
+}
+
+nav li {
+  font-family: inherit;
+}
+
+b {
+  color: var(--primary);
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: #fffeff;
+}
+
+.outline {
+  border: 1px solid #bbb;
+  box-shadow: none;
+  width: 500px;
+  height: 50px;
+  align-self: center;
+  border-radius: 5px;
+  background: yellowgreen;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button__outline {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
