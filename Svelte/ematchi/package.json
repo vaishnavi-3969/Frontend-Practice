@@ -18,5 +18,9 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fontsource/grandstander": "^5.0.18",
+		"@neoconfetti/svelte": "^2.2.1"
+	}
 }
