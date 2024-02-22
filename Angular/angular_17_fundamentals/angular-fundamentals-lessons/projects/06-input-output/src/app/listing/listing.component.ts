@@ -13,7 +13,8 @@ import { Car } from '../car';
       </div>
       <section class="details">
         <p class="title">
-          <!-- car make and model-->{{ car.model }} {{ car.make }}
+          <!-- car make and model-->
+          {{ car.model }} {{ car.make }}
         </p>
         <hr />
         <p class="detail">
@@ -22,7 +23,7 @@ import { Car } from '../car';
         </p>
         <div class="detail">
           <span>Transmission</span>
-          <span><!-- transmission -->Automatic</span>
+          <span><!-- transmission -->{{car.transmission}}</span>
         </div>
         <p class="detail">
           <span>Mileage</span>
@@ -48,7 +49,3 @@ export class ListingComponent {
     this.carSaved.emit(this.car);
   }
 }
-
-
-
-
