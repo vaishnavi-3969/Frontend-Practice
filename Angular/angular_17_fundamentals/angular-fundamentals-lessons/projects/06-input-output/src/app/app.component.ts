@@ -1,38 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Car } from './car';
+import { ListingComponent } from './listing/listing.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [ListingComponent],
   template: `
     <h1>Saved Cars {{ savedCarList.length }}</h1>
     <section class="container">
       <!-- This article element represents and entire listing -->
-      <article class="listing">
-        <div class="image-parent">
-          <img class="product-image" src="https://placehold.co/100x100" />
-        </div>
-        <section class="details">
-          <p class="title"><!-- car make and model--></p>
-          <hr />
-          <p class="detail">
-            <span>Year</span>
-            <span><!-- year --></span>
-          </p>
-          <div class="detail">
-            <span>Transmission</span>
-            <span><!-- transmission --></span>
-          </div>
-          <p class="detail">
-            <span>Mileage</span>
-            <span><!-- miles --></span>
-          </p>
-          <p class="detail">
-            <span>Price</span>
-            <span><!-- price --></span>
-          </p>
-        </section>
-      </article>
+      @for(carEntry of carList; track carEntry){
+        <app-listing [car]="carEntry" />
+      }
       <!-- end car listing markup -->
     </section>
   `,
