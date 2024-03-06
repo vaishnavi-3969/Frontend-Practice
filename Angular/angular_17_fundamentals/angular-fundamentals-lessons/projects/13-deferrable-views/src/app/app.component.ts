@@ -9,8 +9,13 @@ import { PostsComponent } from './posts/posts.component';
     <section class="container">
       <h1>Deferrable Views Example</h1>
       <button #loadPosts>Load Posts</button>
-      <app-posts />
+      @defer(on interaction(loadPosts)){
+        <app-posts />
+      }
+      <!-- <app-posts /> -->
     </section>
   `,
 })
-export class AppComponent {}
+export class AppComponent {
+  
+}
