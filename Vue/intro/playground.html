@@ -12,21 +12,53 @@
       <p v-if="message.length%2===0">Even: {{message}}</p>
       <p v-else>Odd: {{message.toUpperCase()}}</p>
       <ul>
-        <li v-for="number in listOfNumbers">
-          {{number}}
+        <li v-for="item in listOfNumbers">
+          {{item.id}}
+          <ul>
+            <li v-for="number in item.list">{{number}}</li>
+          </ul>
         </li>
       </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js">
     </script>  
     <script>
+      //vue 1
       const {createApp} = Vue
-      
+
+      //vue 2
+      // new Vue()
+
       const app = Vue.createApp({
         data () {
           return {
             message: "Hello it works!",
-            listOfNumbers: [1,2,3,4,5]
+            listOfNumbers: [{
+              name: 1,
+              id: '5a887-f0bf-b192-9201f82a883',
+              list: [1,2,3]
+            },
+            {
+              name: 2,
+              id: '6a887-f0bf-b192-9201f82a883',
+              list: [1,2,3]
+            },
+            {
+              name: 3,
+              id: '7a887-f0bf-b192-9201f82a883',
+              list: [1,2,3]
+            },
+            {
+              name: 4,
+              id: '8a887-f0bf-b192-9201f82a883',
+              list: [1,2,3]
+            },
+            {
+              name: 5,
+              id: '69887-f0bf-b192-9201f82a883',
+              list: [1,2,3]
+            }
+            ]
           }
         }
       });

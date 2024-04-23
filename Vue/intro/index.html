@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Avatar: The Last Airbender</title>
 
   </head>
   <body>
-    <h1>Hello Frontend Masters!</h1>
+    <div id="app">
+      <p v-if="characters.length===0">there are no characters</p>
+      <ul v-else>
+        <li v-for="character in characters">{{character.name}}</li>
+      </ul>
+      <span v-for="(character, index) in characters">
+        {{character.name}} {{index===characters.length-1 ? '' : ','}}
+      </span>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            characters: [
+              { name: 'Aang' },
+              { name: 'Zuko' },
+              { name: 'Troph' },
+              { name: 'Katara' },
+            ]
+          }
+        }
+      }).mount('#app');
+    </script>
   </body>
 </html>
