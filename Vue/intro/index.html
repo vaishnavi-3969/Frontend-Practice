@@ -1,36 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Avatar: The Last Airbender</title>
 
-  </head>
-  <body>
-    <div id="app">
-      <p v-if="characters.length===0">there are no characters</p>
-      <ul v-else>
-        <li v-for="character in characters">{{character.name}}</li>
-      </ul>
-      <span v-for="(character, index) in characters">
-        {{character.name}} {{index===characters.length-1 ? '' : ','}}
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avatar: The Last Airbender</title>
+</head>
+
+<body>
+  <div id="app">
+    <p v-if="characters.length===0">there are no characters</p>
+    <ul v-else>
+      <li v-for="character in characters">
+        <div>
+          <p>{{character.name}}</p>
+          <button @click="addFavoriteCharacter(character)">⭐ Favorite</button>
+        </div>
+      </li>
+    </ul>
+    <pre>
+      {{newCharacter}}
+    </pre>
+    <label for="character-name">
+      Add a character:
+    </label>
+    <input 
+    type="text" 
+    v-model="newCharacter.name" 
+    @keyup.enter="addNewCharacter"
+    />
+    <p v-if="favoriteList.length===0">No Favorite Character!</p>
+    <div v-else>
+      <span v-for="(character, index) in favoriteList">
+        {{character.name}} {{index===favoriteList.length-1 ? '' : ','}}
       </span>
     </div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
-    <script>
-      Vue.createApp({
-        data() {
-          return {
-            characters: [
-              { name: 'Aang' },
-              { name: 'Zuko' },
-              { name: 'Troph' },
-              { name: 'Katara' },
-            ]
+    <div>
+      <h1>Counter</h1>
+      <h1>{{count}}</h1>
+      <label for="incrementAmount">
+        Increment by:
+      </label>
+      <input type="number" v-model="incrementAmount" />
+      <!-- v-model.number -->
+      <!-- v-bind:value="incrementAmount"
+        v-on:input="changeIncrementAmount"
+        /> -->
+
+      <button v-on:click="incrementCount">
+        Increment Count
+      </button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp } = Vue
+    const app = Vue.createApp({
+      data() {
+        return {
+          count: 0,
+          incrementAmount: 1,
+          newCharacter: {
+            name: ''
+          },
+          characters: [
+            { name: 'Aang' },
+            { name: 'Zuko' },
+            { name: 'Troph' },
+            { name: 'Katara' },
+          ],
+          favoriteList: [],
+        }
+      },
+      methods: {
+        incrementCount() {
+          this.count += this.incrementAmount;
+        },
+        changeIncrementAmount(event) {
+          console.log(event)
+          this.incrementAmount = Number(event.target.value);
+        },
+        addFavoriteCharacter(character) {
+          console.log(character)
+          this.favoriteList.push(character);
+        },
+        addNewCharacter(){
+          this.characters.push(this.newCharacter)
+          this.newCharacter = {
+            name: ''
           }
         }
-      }).mount('#app');
-    </script>
-  </body>
+      }
+    })
+    app.mount('#app');
+  </script>
+</body>
+
 </html>
