@@ -12,6 +12,11 @@
     "start": "node index.js"
   },
   "author": "Vaishnavi Kale",
-  "license":"Apache-2.0",
-  "keywords": []
+  "license": "Apache-2.0",
+  "keywords": [],
+  "dependencies": {
+    "exif-parser": "^0.1.12",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21"
+  }
 }
