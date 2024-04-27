@@ -31,6 +31,7 @@ const readPjson = async () => {
 const writeFile = async () => {
     const newFile = fileURLToPath(new URL('./file.txt', import.meta.url));
     await fs.writeFile(newFile, `console.log('yooooo!')`);
+    console.log("Written....")
 }
 
 // readPjson();
