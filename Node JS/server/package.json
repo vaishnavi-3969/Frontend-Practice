@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "jest": "^29.7.0"
+  }
+}

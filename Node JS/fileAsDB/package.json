@@ -1,9 +1,11 @@
 {
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
+    "open": "^10.1.0",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
