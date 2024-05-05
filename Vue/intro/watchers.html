@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchers and Computed Properties</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{counterTitle}}</h1>
+        <h1>{{displayTitle}}</h1>
+        <h2>{{optimizedIncrementAmount}}</h2>
+        <h1>{{count}}</h1>
+        <label for="incrementAmount">
+          Increment by:
+        </label>
+        <input type="number" v-model="incrementAmount" />
+        <button v-on:click="incrementCount">
+          Increment Count
+        </button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js">
+    </script>  
+    <script>
+      //vue 1
+      const {createApp} = Vue
+
+      //vue 2
+      // new Vue()
+
+      const app = Vue.createApp({
+        data () {
+          return {
+            count:10,
+            incrementAmount:8,
+            counterTitle:"hello frontend masters",
+            message: "Hello it works!",
+          }
+        },
+        methods:{
+            incrementCount(newAmount, event){
+                console.log(newAmount)
+                console.log(event)
+                this.count += this.incrementAmount;
+            }
+        },
+        computed: {
+            displayTitle(){
+                if(this.count > 20){
+                    return 'Couter Standard - Very long'
+                }else{
+                    return 'Counter Standard'
+                }
+            },
+            optimizedIncrementAmount(){
+                return this.displayTitle.length * this.incrementAmount;
+            }
+        },
+        watch:{
+            count(value){
+                console.log(value)
+                if(value > 20){
+                    this.counterTitle+=' Very long'
+                }
+            }
+        }
+      });
+      app.mount('#app');
+    </script>
+</body>
+</html>

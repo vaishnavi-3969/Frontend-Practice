@@ -7,8 +7,8 @@
     <title>Playground — Complete Intro to Vue 3</title>
   </head>
   <body>
-    <h1>Hello frontend Masters!</h1>
     <div id="app">
+      <h1>{{ counterTitle }}</h1>
       <p v-if="message.length%2===0">Even: {{message}}</p>
       <p v-else>Odd: {{message.toUpperCase()}}</p>
       <ul>
@@ -32,6 +32,7 @@
       const app = Vue.createApp({
         data () {
           return {
+            counterTitle:"hello frontend masters",
             message: "Hello it works!",
             listOfNumbers: [{
               name: 1,
@@ -60,7 +61,8 @@
             }
             ]
           }
-        }
+        },
+        
       });
       app.mount('#app');
     </script>
