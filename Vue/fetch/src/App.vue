@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import { onMounted } from 'vue';
 
 const pokedex = ref([1, 2, 3]);
 
@@ -9,14 +10,18 @@ const fetchPokemon = async () => {
   pokedex.value = data.results;
 };
 
+onMounted(() => {
+  console.log("component mounted")
+})+
+
+
 </script>
 
 <template>
   <div>
     <h1>New App</h1>
-    <pre>{{pokedex}}</pre>
+    <pre>{{ pokedex }}</pre>
     <button @click="fetchPokemon">Fetch Pokemon</button>
-
   </div>
 </template>
 

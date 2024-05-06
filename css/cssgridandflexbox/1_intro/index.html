@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting started</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *,*::before, *::after {
+            box-sizing: inherit;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+        }
+        ul{
+            padding: 0;
+            margin:5rem auto;
+            list-style-type: none;
+            border: 10px dotted #9b2226;
+            width: 900px;
+            height: 500px;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+            flex-flow: row wrap;
+            
+
+        }
+        li{
+            border: 2px solid #001219;
+            background-color: #ee9800;
+            min-width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li class="flex2">2 Lorem ipsum dolor sit amet</li>
+        <li>3</li>
+        <li>4 Lorem ipsum dolor sit amet.</li>
+        <li class="flex2">5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>
