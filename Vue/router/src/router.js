@@ -32,6 +32,9 @@ export const routes = [
     {
         path: '/blog',
         component: () => import('@/components/Blog.vue')
+    }, {
+        path: '/user',
+        component: () => import('@/components/UserPage.vue')
     },
 ]
 
