@@ -4,8 +4,7 @@ import "fmt"
 
 var Countries [10]string
 var Slice []int
-var Codes map[int] string
-
+var Codes map[int]string
 
 func init() {
 	Countries[0] = "Argentina"
@@ -20,4 +19,5 @@ func init() {
 	Countries[9] = "Italy"
 	fmt.Println("Countries saved")
 	fmt.Println(Countries)
+	fmt.Println(len(Countries))
 }
