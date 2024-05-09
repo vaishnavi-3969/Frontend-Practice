@@ -11,20 +11,30 @@ type User struct {
 	Name string
 }
 
-func (u User) PrettyPrint(){
+func (u User) PrettyPrint() {
 	fmt.Printf("%d : %s", u.Id, u.Name)
 }
 
 func main() {
-	max:=data.Instructor {Id: 3, LastName: "Kale", FirstName:  "Vaishnavi"}
+
+	max := data.Instructor{Id: 3, LastName: "Kale", FirstName: "Vaishnavi"}
 	fmt.Println(max.Print())
 
-	goCourse := data.Course{Id:2, Name:"Go Fundamentals", Instructor: max}
+	goCourse := data.Course{Id: 2, Name: "Go Fundamentals", Instructor: max}
 	fmt.Println(goCourse)
 
-	swiftWS := data.Workshop{Course: goCourse,Instructor: max,Date:time.Now()}
+	swiftCourse := data.Course{Id: 3, Name: "React Fundamentals", Instructor: max}
+
+	swiftWS := data.Workshop{Course: goCourse, Instructor: max, Date: time.Now()}
 	fmt.Println(swiftWS)
-	
+
+	var courses [3]data.Course
+	courses[0] = goCourse
+	courses[1] = swiftCourse
+
+	for i, course := range courses {
+		fmt.Println(i, course)
+	}
 
 	kyle := data.NewInstructor("Kyle", "Simpson")
 	fmt.Println(kyle.Print())
