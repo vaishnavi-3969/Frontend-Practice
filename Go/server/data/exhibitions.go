@@ -10,6 +10,10 @@ func GetAll() []Exhibition {
 	return list
 }
 
+func Add(exhibition Exhibition){
+	list = append(list, exhibition)
+}
+
 var list = []Exhibition{
 	{
 		Title:       "Life in Ancient Greek",

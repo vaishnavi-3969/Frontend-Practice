@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"go/project/api"
+	"go/project/data"
 	"html/template"
 	"net/http"
 )
@@ -17,13 +19,15 @@ func handleTemplate (w http.ResponseWriter, r *http.Request){
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
-	tmpl.Execute(w, "Test")
+	tmpl.Execute(w, data.GetAll())
 }
 
 func main() {
 	server := http.NewServeMux()
 	server.HandleFunc("/hello",handleHello)
 	server.HandleFunc("/template", handleTemplate)
+	server.HandleFunc("/api/exhibitions", api.Get)
+	server.HandleFunc("/api/exhibitions/new", api.Post)
 
 	fs := http.FileServer(http.Dir("./public"))
 	server.Handle("/", fs)
