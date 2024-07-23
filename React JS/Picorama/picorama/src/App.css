@@ -1,0 +1,29 @@
+.app {
+  text-align: center;
+}
+
+.gallery {
+  margin: 20px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.photo {
+  border: 2px solid #ccc;
+  padding: 5px;
+  max-width: 300px;
+}
+
+.photo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  margin: 5px;
+}
