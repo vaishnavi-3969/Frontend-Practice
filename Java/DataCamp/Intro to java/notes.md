@@ -23,4 +23,16 @@
 - .length
 - Array of primitive data types
 - just should have same data type
-- 
+
+# Operators
+- Arithmetic operators
+- ++ -> increment
+- * -> Mutliply
+- Division - /
+- Comparison operators
+- !=, =, >= , <=
+
+https://www.baeldung.com/
+https://dev.java/
+https://www.oracle.com/in/java/
+https://openjdk.org/
