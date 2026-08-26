@@ -6,4 +6,8 @@
 - = -> Assignment operator
 - always specify data type
 - camelcase
-- 
+
+# Working with variables
+- int(123382), double(3.2483742), short (384), byte (15)
+- float, long - f, l (can be upper/lower case) - else gives error
+- char, boolean
