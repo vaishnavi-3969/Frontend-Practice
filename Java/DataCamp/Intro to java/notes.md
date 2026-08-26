@@ -2,5 +2,8 @@
 - Case sensitive
 - Strict syntax
 - doesn't care about whitespaces
-- variables are boxes - type, name, value
+- variables are boxes (store value) - type, name, value
+- = -> Assignment operator
+- always specify data type
+- camelcase
 - 
