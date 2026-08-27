@@ -4,5 +4,18 @@
 
 
 # Collection Framework
+- Collections framework, or any framework, allows applications to be built faster and with better quality, given you are reusing pre-existing, well-tested, well-documented types
+- ArrayList
+- List
+- LinkedList
+- Autoboxing and foreach
+- Sets and Queues
+- Set Interface - every elements is unique
+- HashSet - allow storing single null
+- Queue - FIFO
+- ArrayBlockingQueue - Queues collect and return objects in the order they were added. Queues also have a capacity. Here, you create a waiting listQueue(specifically from anArrayBlockingQueue`) and add names to it. You see what happens when trying to add more names than the capacity allows.
+- Maps
+- 
+
 
 # Exception Handling
