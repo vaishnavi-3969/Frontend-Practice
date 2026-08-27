@@ -10,5 +10,13 @@
 * types of methods - void, non-void
 
 # Encapsulation and inheritance
+- access modifier - public, private, static
+- centralizing code w/ inheritance
+- class Toyota extends Car{}
+- Introducting base class
+- subclass -> class that inherits base class - inhertis all public properties
+- super() - calls constructor of base class
+- abstract class
+- 
 
 # Interfaces and Polymorphism
