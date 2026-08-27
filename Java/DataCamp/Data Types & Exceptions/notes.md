@@ -15,7 +15,7 @@
 - Queue - FIFO
 - ArrayBlockingQueue - Queues collect and return objects in the order they were added. Queues also have a capacity. Here, you create a waiting listQueue(specifically from anArrayBlockingQueue`) and add names to it. You see what happens when trying to add more names than the capacity allows.
 - Maps
-- 
+- <img width="2444" height="368" alt="image" src="https://github.com/user-attachments/assets/716aa796-baf5-4562-98b6-5ac87e5db9f7" />
 
 
 # Exception Handling
