@@ -1,0 +1,22 @@
+// Import ArrayBlockingQueue
+import java.util.concurrent.ArrayBlockingQueue;
+
+public class GetInLine {
+
+	public static void main(String[] args) {
+    	// Create an ArrayBlockingQueue of up to 3 names using parameterized constructor
+		ArrayBlockingQueue<String> waitList = new ArrayBlockingQueue<String>(3);
+		waitList.offer("Sally");
+		waitList.offer("Benny");
+        // Add the name "Tarah"
+		waitList.offer("Tarah");
+		System.out.println(waitList);
+		waitList.offer("Letty");
+		System.out.println(waitList);
+        // Remove the first name
+		String first = waitList.remove();
+		System.out.println(first);
+		waitList.offer("Letty");
+		System.out.println(waitList);
+	}
+}
